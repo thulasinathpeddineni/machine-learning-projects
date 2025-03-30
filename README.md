@@ -55,54 +55,48 @@ git clone https://github.com/yourusername/alzheimers-disease-detection.git
 ```
 Navigate to the project directory:
 
-
 cd alzheimers-disease-detection
+
 Create a virtual environment (optional but recommended):
 
-bash
-Copy
+```
 python -m venv venv
+```
 Activate the virtual environment:
 
 On Windows:
 
-bash
-Copy
+```
 .\venv\Scripts\activate
+```
 On macOS/Linux:
 
-bash
-Copy
+```
 source venv/bin/activate
+```
+
 Install the required dependencies:
 
-bash
-Copy
+```
 pip install -r requirements.txt
+```
+
 Usage
 Running the model
 Prepare your data: Ensure that the clinical data and neuroimaging data are in the required format (CSV for clinical data and DICOM/PNG for images).
 
 Train the model: Run the training script to train both the machine learning and deep learning models:
 
-bash
-Copy
 python train_model.py
 Evaluate the model: After training, use the evaluation script to check the model's performance on the test set:
 
-bash
-Copy
 python evaluate_model.py
 Make Predictions: Use the trained model to predict Alzheimer's disease status for new patients:
 
-bash
-Copy
 python predict.py --data "new_patient_data.csv"
 Visualizing the Results
 You can visualize model performance using the following command:
 
-bash
-Copy
 python plot_results.py
 This will generate various plots such as confusion matrices, ROC curves, and feature importance graphs.
 
